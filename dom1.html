@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Learning</title>
+    <style>
+        .bg-black{
+            background-color: #212121;
+            color: #fff;
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <div >
+        <h1 id="title" class="heading">DOM Learning on chai or code <span style="display: none;">test text</span></h1>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <h2>Lorem ipsum dolor sit.
+        </h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <input type="password" name="" id="">
+        <ul>
+            <li class="list-item">one</li>
+            <li class="list-item">two</li>
+            <li class="list-item">three</li>
+            <li class="list-item">four</li>
+        </ul>
+    </div>
+</body>
+</html>
+
+<!-- 1. In the document file inspect it and type: document.getElementById or name or classname or title..... and perform operation
+2.   It includes title.innerHTML,innerText,TextContent
+3.   document.querySelector('h1') : it returns the first h1
+    document.querySelector('title'),("#title"),(.heading)
+4.  to view a list: document.querySelector('ul')
+5.  const myul=document.querySelector('ul')
+    const turnGreen=myul.querySelector('li') ......turnGreen.innerText(returns first value but it can be changed: turnGreen.innerText="five")
+6.  const tempList=document.querySelectorAll('li')....returns all the elements as nodelist which includes forEach
+    tempList[0].style.color='green'
+7.  tempList.forEach(function (l){
+        l.style.backgroundColor="green"})
+8.  const tempClassList=document.getElementsByClassName("list-item").....returns a htmlcollection but forEach does not work like before
+9.  To use map in nodelist we need to convert it, similarly to use forEach in htmlcollection we will convert it using ( Array.from(tempClassList))
+-->
